@@ -1,24 +1,23 @@
-/* DashboardComponent's private CSS styles */
-
+/* Stijlen voor DashboardComponent */
 h2 {
     text-align: center;
-  }
-  
-  .heroes-menu {
+    margin-top: 20px; /* Voegt wat ruimte boven de kop toe */
+}
+
+.heroes-menu {
     padding: 0;
     margin: auto;
     max-width: 1000px;
-  
-    /* flexbox */
+
+    /* Flexbox lay-out */
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between; /* Wijzigt space-around naar space-between */
     align-content: flex-start;
     align-items: flex-start;
-  }
-  
-  a {
+}
+
+a {
     background-color: #3f525c;
     border-radius: 2px;
     padding: 1rem;
@@ -29,22 +28,23 @@ h2 {
     text-align: center;
     width: 100%;
     min-width: 70px;
-    margin: .5rem auto;
+    margin: 0.5rem 0; /* Vereenvoudigt de marge */
     box-sizing: border-box;
-  
-    /* flexbox */
+
+    /* Flexbox lay-out */
     order: 0;
-    flex: 0 1 auto;
+    flex: 0 1 calc(33.33% - 10px); /* Verdeelt de items in drie kolommen */
     align-self: auto;
-  }
-  
-  @media (min-width: 600px) {
+}
+
+@media (min-width: 600px) {
     a {
-      width: 18%;
-      box-sizing: content-box;
+        flex: 0 1 calc(18% - 10px); /* Verdeelt de items in vijf kolommen op grotere schermen */
+        margin: 0.5rem; /* Voegt wat marge toe rondom de items */
     }
-  }
-  
-  a:hover {
+}
+
+a:hover {
     background-color: #000;
-  }
+    transition: background-color 0.3s; /* Voegt een vloeiende overgang toe */
+}

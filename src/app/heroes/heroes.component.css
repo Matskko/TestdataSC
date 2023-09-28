@@ -1,46 +1,49 @@
 /* HeroesComponent's private CSS styles */
 .heroes {
-    margin: 0 0 2em 0;
+    margin: 0;
     list-style-type: none;
     padding: 0;
     width: 15em;
-  }
-  .heroes li {
+}
+
+.heroes li {
     position: relative;
     cursor: pointer;
-  }
-  
-  .heroes li:hover {
+    transition: left 0.3s; /* Voeg een vloeiende overgang toe voor het bewegen van de lijstitems */
+}
+
+.heroes li:hover {
     left: .1em;
-  }
-  
-  .heroes a {
+}
+
+.heroes a {
     color: #333;
     text-decoration: none;
     background-color: #EEE;
-    margin: .5em;
-    padding: .3em 0;
-    height: 1.6em;
+    margin: .5em 0;
+    padding: .3em 1em;
+    height: 2em; /* Vergroot de hoogte voor een betere klikbaarheid */
     border-radius: 4px;
     display: block;
     width: 100%;
-  }
-  
-  .heroes a:hover {
+    transition: color 0.3s, background-color 0.3s; /* Voeg een vloeiende overgang toe */
+}
+
+.heroes a:hover {
     color: #2c3a41;
     background-color: #e6e6e6;
-  }
-  
-  .heroes a:active {
+}
+
+.heroes a:active {
     background-color: #525252;
     color: #fafafa;
-  }
-  
-  .heroes .badge {
+}
+
+.heroes .badge {
     display: inline-block;
     font-size: small;
     color: white;
-    padding: 0.8em 0.7em 0 0.7em;
+    padding: 0.8em 0.7em 0;
     background-color: #405061;
     line-height: 1em;
     position: relative;
@@ -48,7 +51,7 @@
     top: -4px;
     height: 1.8em;
     min-width: 16px;
-    text-align: right;
+    text-align: center; /* Zorg ervoor dat de badgeinhoud gecentreerd is */
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
-  }
+}

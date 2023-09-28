@@ -2,23 +2,34 @@
 label {
     color: #435960;
     font-weight: bold;
-  }
-  input {
+    font-size: 1.2rem; /* Vergroot de lettergrootte voor betere leesbaarheid */
+    margin-bottom: 8px; /* Voegt wat ruimte onder labels toe */
+}
+
+input {
     font-size: 1em;
     padding: .5rem;
-  }
-  button {
+    width: 100%; /* Zorgt ervoor dat het inputveld de volledige beschikbare breedte gebruikt */
+    border: 1px solid #ccc; /* Voegt een lichte rand toe aan inputvelden voor visuele scheiding */
+    border-radius: 4px;
+}
+
+button {
     margin-top: 20px;
     background-color: #eee;
     padding: 1rem;
     border-radius: 4px;
     font-size: 1rem;
-  }
-  button:hover {
+    cursor: pointer; /* Voegt een aanwijzer toe die aangeeft dat het element klikbaar is */
+    transition: background-color 0.3s; /* Voegt een vloeiende overgang toe */
+}
+
+button:hover {
     background-color: #cfd8dc;
-  }
-  button:disabled {
+}
+
+button:disabled {
     background-color: #eee;
     color: #ccc;
-    cursor: auto;
-  }
+    cursor: not-allowed; /* Verandert de cursorstijl voor uitgeschakelde knoppen */
+}

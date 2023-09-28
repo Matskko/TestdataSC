@@ -1,21 +1,30 @@
 /* AppComponent's private CSS styles */
 h1 {
-    margin-bottom: 0;
-  }
-  nav a {
-    padding: 1rem;
+    margin-bottom: 20px; /* Geeft wat ruimte onder de kop */
+    font-size: 24px; /* Verhoogt de lettergrootte voor meer nadruk */
+}
+
+nav {
+    background-color: #f8f8ff; /* Wijzigt de achtergrondkleur van de navigatiebalk */
+    padding: 10px; /* Voegt wat ruimte rondom de navigatiebalk toe */
+}
+
+nav a {
+    padding: 10px 20px; /* Vergroot het klikbare gebied en de ruimte rondom de tekst */
     text-decoration: none;
     margin-top: 10px;
     display: inline-block;
     background-color: #e8e8e8;
     color: #3d3d3d;
     border-radius: 4px;
-  }
-  
-  nav a:hover {
+    transition: background-color 0.3s, color 0.3s; /* Voegt een vloeiende overgang toe */
+}
+
+nav a:hover {
     color: white;
     background-color: #42545C;
-  }
-  nav a:active {
-    background-color: black;
-  }
+}
+
+nav a:active {
+    background-color: #000;
+}

@@ -3,17 +3,22 @@ h2 {
     color: #A80000;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-  }
-  
-  .clear {
+    font-size: 1.5rem; /* Gebruik rem voor een betere schaalbaarheid */
+    margin-bottom: 12px;
+}
+
+.clear {
     color: #333;
     background-color: #eee;
     margin-bottom: 12px;
     padding: 1rem;
     border-radius: 4px;
     font-size: 1rem;
-  }
-  .clear:hover {
+    cursor: pointer; /* Voeg een cursor toe die aangeeft dat het element klikbaar is */
+    transition: background-color 0.3s, color 0.3s; /* Voeg een vloeiende overgang toe */
+}
+
+.clear:hover {
     color: white;
     background-color: #42545C;
-  }
+}
